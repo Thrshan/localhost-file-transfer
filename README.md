@@ -27,4 +27,6 @@ ipconfig
 ```
 Then the webapp can be accessed from any device conneced to the same network by visiting `192.xxx.xxx.xxx:3000`.
 
+The transfered file will be saved in the uploads folder.
+
 

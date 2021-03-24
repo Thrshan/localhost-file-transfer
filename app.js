@@ -8,7 +8,8 @@ app.use(express.static('public'));
  
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, 'D:/Project/Website/file-share/uploads')
+    //   cb(null, 'D:/Project/file-share/uploads')
+      cb(null, __dirname + '/uploads')
     },
     filename: function (req, file, cb) {
     //   cb(null, file.fieldname + '-' + Date.now())
