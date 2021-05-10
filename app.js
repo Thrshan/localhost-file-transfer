@@ -84,6 +84,8 @@ app.get("/get", function (req, res) {
 
 // Home page
 app.get("/", function (req, res) {
+  console.log(req.ip);
+  console.log(req.connection.remoteAddress);
   res.render('index', { username : "Kevin"
   });
 });
